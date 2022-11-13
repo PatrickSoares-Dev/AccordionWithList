@@ -1,6 +1,6 @@
 let accordion = document.querySelector(".accordion");
 let accordionChild = accordion.children
-let select = document.querySelector('.Select')
+let select = document.querySelector('.select')
 let selectLista = []
 
 function numberInputElementCreator2(element, className, id, content) {
