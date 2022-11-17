@@ -1,6 +1,66 @@
+.container{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.funciona{
+    margin-left: 50px;
+    border: 1px solid #ecebeb;
+    padding: 10px 10px 10px 10px;
+}
+
+.formulario{
+  padding-right: 16.2rem;
+
+}
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+label{
+    color: #000;
+    font-size: 0.9rem;
+}
+#first_name, #email, #company, #telephony, textarea, select{
+    padding: 10px 30px ;
+    width: 150%;
+    border-radius: 3px;
+    border: 1px solid  rgb(211, 211, 211)rgb(211, 211, 211);
+    border-bottom: 3px solid rgb(211, 211, 211); 
+    box-shadow: rgba(0, 0, 0, 0.082) 0px 2px 4px;   
+}
+input:focus, textarea:focus{
+    outline: none;
+}
+textarea, textarea:focus{
+    height: 100px;
+}
+#respSucesso, #respError{
+    padding: 5px 0px;
+}
+#btn{
+    background-color: #f35360;
+    color: #fff;
+    width: 165%;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    margin-bottom: 50px;
+    padding: 10px 35px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    font-weight:600;
+    cursor:not-allowed;
+}
+
 .accordion {
-    max-width: 400px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 25px;
+    width: 100%;
+    border: 1px solid #d9d9dc;
     border-radius: 5px;
     overflow: hidden;
     font-family: "Quicksand", sans-serif;
@@ -8,21 +68,26 @@
   }
 
 .accordionBorder{
-    border-bottom: 1px solid rgb(204, 204, 204);
+    border: 1px solid #d9d9dc;
 }
   
   .accordion__label,
   .accordion__content {
-    padding: 14px 20px;
+    padding: 25px 30px;
   }
   
+  .checkbox2{
+    margin-left: 25px;
+  }
   .accordion__label {
+
     display: block;
     color: #000000;
-    font-weight: 500;
+    font-weight: 400;    
     cursor: pointer;
     position: relative;
     transition: background 0.1s;
+    
   }
   
   .accordion__label:hover {
@@ -44,11 +109,12 @@
   
   .accordion__content {
     background: #ffffff;
-    line-height: 1.6;
-    font-size: 0.85em;
+    line-height: 1.3;
+    font-size: 0.75em;
     display: none;
   }
   
+
   .accordion__input {
     display: none;
   }
@@ -82,7 +148,6 @@ body {
 }
 
 .form-group label {
-  padding-left: 10px;
   cursor: pointer;
 }
 
@@ -140,4 +205,129 @@ body {
 .labelServices{
   color: #ca1c2a;
   margin-left: 15px;
+}
+
+
+::selection{
+  color: #fff;
+  background: #4db2ec;
+}
+
+.wrapper{
+  max-width: 280px;
+  width: 100%;
+  background: #fff;
+  padding: 22px 30px 40px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.wrapper header{
+  color: #4db2ec;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+.wrapper .captcha-area{
+  display: flex;
+  height: 40px;
+  margin: 30px 0 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.captcha-area .captcha-img{
+  height: 100%;
+  width: 380px;
+  user-select: none;
+  background: #000;
+  border-radius: 5px;
+  position: relative;
+}
+.captcha-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  opacity: 0.95;
+}
+.captcha-img .captcha{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  color: rgb(66, 65, 65);
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 10px;
+  transform: translate(-50%, -50%);
+  text-shadow: 0px 0px 2px #b1b1b1;
+  font-family: 'Noto Serif', serif;
+}
+.wrapper button{
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background: #4db2ec;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.wrapper button:hover{
+  background: #2fa5e9;
+}
+.captcha-area .reload-btn{
+  margin-left: 5px;
+  width: 60px;
+  height: 100%;
+  font-size: 11px;
+}
+.captcha-area .reload-btn i{
+  transition: transform 0.3s ease;
+}
+.captcha-area .reload-btn:hover i{
+  transform: rotate(15deg);
+}
+.wrapper .input-area{
+  height: 60px;
+  width: 100%;
+  position: relative;
+}
+.input-area input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding-left: 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+}
+.input-area input:is(:focus, :valid){
+  padding-left: 19px;
+  border: 2px solid #4db2ec;
+}
+.input-area input::placeholder{
+  color: #bfbfbf;
+}
+.input-area .check-btn{
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  font-size: 14px;
+  height: 45px;
+  padding: 0 05px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+.input-area input:valid + .check-btn{
+  opacity: 1;
+  pointer-events: auto;
+}
+.wrapper .status-text{
+  display: none;
+  font-size: 13px;
+  text-align: center;
+  margin: 20px 0 -5px;
+
 }

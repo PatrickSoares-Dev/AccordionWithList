@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+    <title>Teste Formulário</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
+
 <body>
+<<<<<<< HEAD
+    <h1 style="margin-left: 30px; margin-top: 25px; color: #CA1C2A; font-size: 25px;">Monte seu plano</h1>
+    <h1 style="margin-left: 30px; margin-top: 25px; color: #54595F; font-size: 15px;">Preencha o formulário abaixo com os produtos que deseja comprar e suas informações para contato. Respondemos em até 24h.</h1>
+    <div class="container">
+=======
     <div class="accordion">
         <div class="accordionBorder">
           <input type="radio" name="example_accordion" id="section1" class="accordion__input">
@@ -102,12 +109,179 @@
       
     <div class="select" style="margin-top: 1rem;">
       <p style="margin-left: 15px; margin-bottom: 5px;">Serviços selecionados: </p>
+>>>>>>> 69e62d22d29ca2fc43ae349ed82202185390da38
         
-    </div>
+        <div class="funciona">
+            <h1  id='titleBorder' style="margin-left: 25px; margin-top: 25px; color: #54595F; font-size: 15px;">1. Selecione os serviços.</h1>
+            <div class="accordion">
+                <div class="accordionBorder">
+                <input type="radio" name="example_accordion" id="section1" class="accordion__input">
+                <label for="section1" class="accordion__label">Internet</label>
+                <div class="accordion__content">
+        
+                    <div class="form-group">
+                        <input class="checkbox" id="checkboxInternet" onchange="Checked(value = 'INTERNET')" type='checkbox' />
+                        <label for="checkbox1" id="" style="margin-left: 5px;">Internet Dedicada = Callnet Premium</label>
+                    </div>
+        
+                    <div class="form-group">
+                        <input class="checkbox" id="checkboxBanda" onchange="Checked(value = 'BANDA')" type='checkbox' />                        
+                        <label for="checkbox2"id="" style="margin-left: 5px;">Banda Larga - Callnet Banda Larga</label>
+                    </div>
+        
+                    <div class="form-group">
+                        <input class="checkbox" id="checkboxWifi" onchange="Checked(value = 'WIFI')" type='checkbox'  />
+                        <label for="checkbox2" id="" style="margin-left: 5px;">Wi-fi</label>
+                    </div>
+        
+                </div>
+                </div>
+                <div class="accordionBorder">
+                <input type="radio" name="example_accordion" id="section2" class="accordion__input">
+                <label for="section2" class="accordion__label">Telefonia</label>
+                <div class="accordion__content">
+                    
+                    <div class="form-group">
+                        <input class="checkbox" id="checkboxVip" onchange="Checked(value = 'IPBX')" type='checkbox' />
+                        <label for="checkbox1" id="" style="margin-left: 5px;">Callphone VIP - IPBX</label>
+                    </div>
+        
+                    <div class="form-group">
+                        <input class="checkbox" id="checkboxE1" onchange="Checked(value = 'E1')" type='checkbox'  />
+                        <label for="checkbox2" id="" style="margin-left: 5px;">E1</label>
+                    </div>
+        
+                    <div class="form-group">
+                        <input class="checkbox" id="checkboxSip" onchange="Checked(value = 'SIP')" type='checkbox'  />
+                        <label for="checkbox2" id="" style="margin-left: 5px;">SIP TRUNK</label>
+                    </div>
+        
+                    <div class="form-group">
+                        <input class="checkbox" id="checkbox0800" type='checkbox' onchange="Checked(value = '0800')"  />
+                        <label for="checkbox2" id="" style="margin-left: 5px;">Números 0800 e 40XX</label>
+                    </div>
+        
+                </div>
+                </div>
+                <div class="accordionBorder">
+                <input type="radio" name="example_accordion" id="section3" class="accordion__input">
+                <label for="section3" class="accordion__label">Rede e Infraestrutura</label>
+                <div class="accordion__content">
+        
+                    <div class="form-group">
+                        <input class="checkbox" id="checkboxPonto" onchange="Checked(value = 'PONTO')" type='checkbox' />
+                        <label for="checkbox1" id="" style="margin-left: 5px;">Callnet Ponto-a-Ponto</label>
+                    </div>
+        
+                    <div class="form-group">
+                        <input class="checkbox" id="checkboxMPLS" onchange="Checked(value = 'MPLS')" type='checkbox'  />
+                        <label for="checkbox2" id="" style="margin-left: 5px;">Callnet MPLS</label>
+                    </div>
+        
+                    <div class="form-group">
+                        <input class="checkbox" id="checkboxFibra" onchange="Checked(value = 'FIBRA')" type='checkbox'  />
+                        <label for="checkbox2" id="" style="margin-left: 5px;">Fibra Apagada e Dutos</label>
+                    </div>
+        
+                    <div class="form-group">
+                        <input class="checkbox" id="checkboxColocation" onchange="Checked(value = 'LOCATION')" type='checkbox'  />
+                        <label for="checkbox2" id="" style="margin-left: 5px;">Co-location</label>
+                    </div>
+        
+                </div>
+                </div>
+        
+                <div class="accordionBorder">
+                    <input type="radio" name="example_accordion" id="section4" class="accordion__input">
+                    <label for="section4" class="accordion__label">Mobilidade</label>
+                    <div class="accordion__content">
+        
+                    <div class="form-group">
+                        <input class="checkbox" id="checkboxMVNO" onchange="Checked(value = 'MVNO')" type='checkbox' />
+                        <label for="checkbox1" id="" style="margin-left: 5px;">MVNO/MVNE</label>
+                        </div>
+        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="Select" style="margin-top: 10px; margin-left: 15px;">
+                <p>Serviços selecionados</p>
+            </div>
+        </div>
+        <div class="funciona">  
+            <h1 style="margin-left: 25px; margin-top: 25px; color: #54595F; font-size: 15px;">2. Suas informações.</h1>
+        
+            <form class="formulario" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" >
+    
+                <input type=hidden name="oid" value="00D6A0000001BSm">
+                <input type=hidden name="retURL" value="https://sitedatelecall.modavo.com.br/">
+                <input type=hidden name="oid" value="00D6A0000001BSm">
+                
+                
+                <label for="title"></label><input style="display: none;"  id="title" maxlength="300" name="title" size="20" type="text" /><br>
 
-     
-<script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
-<script src="./script.js"></script>
+                <label for="first_name" id="resName">Nome: </label><br>
+                    <input  id="first_name" class="inputs" maxlength="60"  name="first_name" size="20" type="text" placeholder="Digite seu nome" oninput="validaName()" onkeypress="return ApenasLetras(event,this)" />
+                <br>
+                
+                <label for="company" id="resCompany" >Empresa:</label><br>
+                    <input  id="company" class="inputs" maxlength="40" name="company" size="20" type="text" placeholder="Digite sua empresa" oninput="validaCompany()"  onkeypress="return ApenasLetras(event,this)"/>
+                <br>
+                
+                <label for="telephony" id="resPhone">Telefone: </label><br>
+                <input  id="telephony"  class="inputs" maxlength="14" name="telephony" size="20" type="text" placeholder="Digite seu telefone"  oninput="validaTelephony( this, mtel )">
+                <br>
+                    
+                <label for="email" id="resEmail">Email: </label><br>
+                    <input  id="email" class="inputs" maxlength="80" name="email" size="20" type="text" placeholder="Digite seu email" oninput="validaEmail(this.value)"/>
+                <br>
+        
+                <label for="messege" id="resMessege">Mensagem: </label><br>
+                    <textarea id="messege" class="inputs" placeholder="Digite aqui sua mensagem.." oninput="validaMessege()"></textarea>
+                <br>
+        
+                
+
+                <div id="respErro" class="loader">
+                    <p></p>
+                </div>
+                <div id="respSucesso" class="loader"> 
+                    <p></p>
+                   
+                </div>
+
+                <div class="wrapper">
+                    <header>Não sou um robô</header>
+                    <div class="captcha-area">
+                      <div class="captcha-img">
+                        <a href="https://imgbb.com/"><img src="https://i.ibb.co/R7mWtZW/captcha-bg.png" alt="captcha-bg" border="0" /></a>
+                        <span class="captcha"></span>
+                      </div>
+                      <button class="reload-btn"><i class="fas fa-redo-alt"></i></button>
+                    </div>
+                    <div class="input-area">
+                      <input type="text" placeholder="Confirme o texto" maxlength="6" spellcheck="false" required>
+                      <button class="check-btn">Verificar</button>
+                    </div>
+                    <div class="status-text">
+                        
+                    </div>
+                </div>
+                
+                
+                <button id="btn" type="submit" name="submit" disabled  >Enviar</button>
+
+            </form>
+            
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+
+
 
 </body>
 </html>
